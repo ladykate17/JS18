@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic);
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	background-color: #FFF;
+}
+ 
+.site-title{
+	font-weight: 300;
+	font-size: 60px;
+}
+
+.btn {
+	border: none;
+	box-shadow: none;
+	border-radius: 5px;
+	display: block;
+	margin: 20px auto;
+}
+
+.btn-lg {
+padding: 10px 35px;
+}
+
+
+.btn:hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.default-btn {
+	background-color: #389659;
+}
+
+.important-btn {
+	background-color: #AC0534;
+}
+
+.containter{
+	width: 100%;
+}
+
+.intro{
+	text-align: center;
+	background-color: #496D7F;
+	padding: 70px 20%;
+	font-weight: 300;
+}
+
+.quote-form {
+	background-color: #432096;
+	padding: 30px 20% 60px;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	color: #333;
+}
+
+.undo {
+	background-color: #A86A22;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	z-index: 1;
+	position: absolute;
+	width: 100%
+}
+
+.quote-block {
+	background-color: #ddd;
+	color: #333;
+	width: 20%; 
+	padding: 80px 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.quote-text {
+	font-weight: 700;
+	text-align: justify;
+}
+
+.author {
+	font-size: 14px;
+	text-align: right;
+	font-style: italic;
+}
+
+.remove {
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: underline;
+	color: rgba(30, 30, 30, 0.6);
+	display: block;
+	padding-top: 10px; 
+}
+
+.rate {
+	padding: 2px;
+	color: rgba(30, 30, 30, 0.3);
+
+}
+
+.rate-hover {
+	color: #A86A22;
+}
+
