@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -15,25 +15,34 @@ body {
 	border: none;
 	box-shadow: none;
 	border-radius: 5px;
-	display: block;
-	margin: 20px auto;
+
 }
 
 .btn-lg {
-padding: 10px 35px;
+	padding: 10px 35px;
+	margin: 20px auto;
 }
 
+.btn-sm {
+	padding: 5px 15px;
+	margin-left: 15px;
+}
 
-.btn:hover{
-	background-color: rgba(0, 0, 0, 0.3);
+.default-btn:hover{
+	background-color: #43C06F;
 }
 
 .default-btn {
+	display: block;
 	background-color: #389659;
 }
 
 .important-btn {
 	background-color: #AC0534;
+}
+
+.important-btn:hover {
+	background-color: #D3144A;
 }
 
 .containter{
@@ -49,7 +58,7 @@ padding: 10px 35px;
 
 .quote-form {
 	background-color: #432096;
-	padding: 30px 20% 60px;
+	padding: 30px 20% 30px;
 }
 
 input {
@@ -96,6 +105,9 @@ input {
 	display: block;
 	padding-top: 10px; 
 }
+.remove:hover {
+	color: #AC0534;
+}
 
 .rate {
 	padding: 2px;
@@ -103,7 +115,15 @@ input {
 
 }
 
-.rate-hover {
+.rate-hover  {
 	color: #A86A22;
+}
+
+footer{
+	background-color: #222;
+	padding: 20px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 300;
 }
 
