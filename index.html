@@ -17,16 +17,16 @@
 
 		<div class="random-block">
 			<i class="fa fa-quote-left qte-mrk"></i>
-			<h3>A random quote will go here. . . <em>eventually. . .</em></h3>
+			<h3 class="random-quote">A random quote will go here. . . <em>eventually. . .</em></h3>
 			<div class="random-quote"></div>
 			<i class="fa fa-quote-right qte-mrk right"></i>
 		</div>
 
 		<div class="quote-form">
 			<h2>Enter an inspirational quote of your own.</h2>
-			<h4>Quote:</h4>
+			<h4 class="qt-err">Quote:</h4>
 			<input id="quote" type="text">
-			<h4>Author</h4>
+			<h4 class="auth-err">Author</h4>
 			<input id="author" type="text">
 			<button class="btn default-btn btn-lg" id="submit">submit</button>
 		</div>
@@ -34,12 +34,9 @@
 		<div class="undo"> Quote Sucessfully Removed. <button class="btn btn-sm important-btn redo">undo</button></div>
 		
 		<div class="qt-container">
-		<!-- <div class="quote-block">
-			<p class="quote-text">*TEST BLOCK* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p class="author">- L. Ricardo</p>
-			<i class="rate fa fa-star fa-lg" data-id="1"></i><i class="rate fa fa-star fa-lg" data-id="2"></i><i class="rate fa fa-star fa-lg" data-id="3"></i><i class="rate fa fa-star fa-lg" data-id="4"></i><i class="rate fa fa-star fa-lg" data-id="5"></i>
-			<a href="#" class="remove">remove this quote</a>
-		</div> -->
+			<div class="quote-template">
+				<p class="quote-text"></p><p class="author"></p><div class="rating"><span class="star rate" data-rating="5"></span><span class="star rate" data-rating="4"></span><span class="star rate" data-rating="3"></span><span class="star rate" data-rating="2"></span><span class="star rate" data-rating="1"></span></div><a href="#" class="remove">remove this quote</a>
+			</div>
 		</div>
 
 	</div>

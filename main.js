@@ -1,3 +1,6 @@
+// localStorage["contents"] = JSON.stringify($('.pageContent').html());
+// $('.pageContent').html(JSON.parse(localStorage["contents"]));
+
 $(document).on('ready', function() {
   
 var AllQuotes = []
@@ -19,29 +22,33 @@ Quote.prototype.create = function(){
 
 	return this.el
 }
-	// var $random = Math.floor().
-
-	// $('.random-quote').append($random)
 
 
 	$('#submit').on('click', function(){
 
-		
 
 		var q = $('#quote').val();
 		var a = $('#author').val();
 
+		if ( q === '' || a === ''){
+			$('.qt-err').after('<p class="error">Oops, please enter a quote.</p>')
+			setTimeout(function(){
+				var error = $('.error').fadeOut(4000).remove();
+			}, 6000);
+		}
+		else {
+			var setQuote = new Quote(q, a);
 
-		var setQuote = new Quote(q, a);
+			$('input').val('');
+			$('.qt-container').append(setQuote.create());
+			$('.quote-text').last().append(q);
+			$('.author').last().append('-' + ' ' + a);
+		}
 
-		$('input').val('');
-		$('.qt-container').append(setQuote.create());
-		$('.quote-text').last().append(q);
-		$('.author').last().append('-' + ' ' + a);
+		// after local storage is implemented this will render upon DOM load
+		// var $random = Math.floor((Math.random() * AllQuotes.length));
+		// $('.random-quote').text('');
 
-		// console.log(setQuote)
-
-	// console.log(AllQuotes);
 	});
 
 
@@ -51,12 +58,12 @@ Quote.prototype.create = function(){
 
 		setTimeout(function(){
 
-			$('.undo').fadeIn(500);
+			$('.undo').slideDown('slow');
 
 			$('.redo').on('click', function(){
 				
 				// console.log( ('Clicked! What!!') );
-				$('.undo').fadeOut(500);
+				$('.undo').slideUp('slow');
 				$('.quote-block').fadeIn(500);
 			})
 
@@ -102,16 +109,11 @@ Quote.prototype.create = function(){
 		}
 
 
+		$(this).prev().andSelf().addClass('active');
 
-		$(this).prev().addClass('active');
-
-	console.log(AllQuotes);
+	// console.log(AllQuotes);
 
 	});
 	
-
-
-
-
 
 });
