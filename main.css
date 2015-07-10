@@ -34,7 +34,7 @@ body {
 
 .default-btn {
 	display: block;
-	background-color: #389659;
+	background-color: #16C352;
 }
 
 .important-btn {
@@ -51,13 +51,13 @@ body {
 
 .intro{
 	text-align: center;
-	background-color: #496D7F;
+	background-color: #558DDB;
 	padding: 70px 20%;
 	font-weight: 300;
 }
 
 .quote-form {
-	background-color: #432096;
+	background-color: #744E98;
 	padding: 30px 20% 30px;
 }
 
@@ -109,15 +109,47 @@ input {
 	color: #AC0534;
 }
 
-.rate {
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+
+.rating span.star {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+}
+
+.rating span.star:before {
+  content: "\f005";
+  padding: 2px;
+  color: #999;
+  }
+
+/*.rating > span.star:hover,
+.rating > span.star:hover ~ span {
+  color: #ddd;
+}*/
+.rating > span.star:hover:before,
+.rating > span.star:hover ~ span:before {
+   content: "\f005";
+   color: #E0AE10;
+}
+/*.rate {
 	padding: 2px;
 	color: rgba(30, 30, 30, 0.3);
 
 }
 
-.rate-hover  {
-	color: #A86A22;
+.rate:hover  {
+	color: #E0AE10;
 }
+
+.rate-active  {
+	color: #E0AE10;
+}*/
 
 footer{
 	background-color: #222;
