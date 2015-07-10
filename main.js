@@ -36,6 +36,7 @@ Quote.prototype.create = function(){
 				var error = $('.error').fadeOut(4000).remove();
 			}, 6000);
 		}
+		else if ( this.id === this)
 		else {
 			var setQuote = new Quote(q, a);
 
