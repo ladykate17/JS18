@@ -117,10 +117,15 @@ input {
 	box-sizing: border-box;
 	background-color: #ddd;
 	color: #333;
-	width: 25%; 
+	width: 33.3333333%; 
 	padding: 80px 40px;
+	height: 100%;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.even-block {
+	background-color: #999;
 }
 
 .quote-text {
